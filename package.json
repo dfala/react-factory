@@ -1,0 +1,25 @@
+{
+  "name": "react-factory",
+  "version": "1.0.0",
+  "description": "Landing page for a month-long workshop to learn react.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfala/react-factory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfala/react-factory/issues"
+  },
+  "homepage": "https://github.com/dfala/react-factory#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "less": "^2.5.1"
+  }
+}
