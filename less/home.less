@@ -1,0 +1,124 @@
+.underlay {
+  position: fixed;
+  // @overlay-url: "https://cdn.auth0.com/blog/react-js/react.png";
+  // background: url(@overlay-url) 50% 50% no-repeat scroll;
+  bottom: 5rem;
+  right: 5rem;
+  width: 8vw;
+  z-index: -1;
+}
+
+
+.banner {
+  width: 100%;
+  height: 100vh;
+
+  // background: radial-gradient(at bottom, #060035 0, #05033B 25%, #050038 50%, #040135 75%, #01002A 100%);
+
+  background: url("../images/banner.png") 50% 50% no-repeat scroll;
+  background-size: cover;
+  text-align: center;
+
+  .inner {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3, h4 {
+      color: #B4B4B4;
+    }
+
+    h4 {
+      margin-top: 80px;
+    }
+
+    input {
+      margin-top: 20px;
+      height: 50px;
+      max-width: 20rem;
+      color: #444;
+    }
+
+    button {
+      vertical-align: bottom;
+      height: 50px;
+    }
+
+    .focus {
+      color: #fff;
+    }
+  }
+
+  h1  {
+    margin: 0;
+  }
+}
+
+section {
+	.wrapper {
+		max-width: 100rem;
+		margin: 7rem auto;
+		// border:1px solid green;
+
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 7rem;
+
+		.wrapper-inner {
+			max-width: 700px;
+			margin: 0 auto;
+			padding: 0 2rem;
+			// border: 1px solid red;
+		}
+	}
+
+	.last {
+		border-bottom: none;
+	}
+
+	h1 {
+		margin-bottom:  3rem; 
+		// border: 1px solid yellow;
+	}
+}
+
+.bio-wrapper {
+	text-align: center;
+
+
+	.bio {
+		@bio-margin-top: 5rem;
+		margin-top: 2 + @bio-margin-top;
+		display: inline-block;
+		max-width: 238px;
+		border: 1px solid #ccc;
+
+		img {
+			margin-top: -@bio-margin-top;
+			margin-bottom: 1rem;
+			border-radius: 99px;
+			height: 15rem;
+			width: 15rem;
+			background-color: #fff;
+			padding: 1rem;
+		}
+
+		p {
+		  color: rgb(102, 102, 102);
+		}
+
+		.bio-story {
+
+		}
+		.bio-name {
+			font-weight: bold;
+		}
+		.bio-title {
+
+		}
+	}
+}

@@ -13,41 +13,120 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
 }
+p {
+  font-size: 18px;
+  line-height: 27px;
+}
+input {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.btn {
+  background-color: #61dafb;
+  color: #444;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: #2fcefa;
+}
+.btn:active {
+  outline: none;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
 .react {
-  color: #61dafb;
+  color: #61dafb !important;
   font-weight: 400;
 }
-.banner {
+.home .underlay {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  width: 8vw;
+  z-index: -1;
+}
+.home .banner {
   width: 100%;
   height: 100vh;
-  background: url("images/banner.png") 50% 50% no-repeat scroll;
+  background: url("../images/banner.png") 50% 50% no-repeat scroll;
   background-size: cover;
   text-align: center;
 }
-.banner .inner {
+.home .banner .inner {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.62);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.banner .inner h3,
-.banner .inner h4 {
+.home .banner .inner h3,
+.home .banner .inner h4 {
   color: #B4B4B4;
 }
-.banner .inner h4 {
+.home .banner .inner h4 {
   margin-top: 80px;
 }
-.banner .inner input {
+.home .banner .inner input {
   margin-top: 20px;
-  border-radius: 0;
+  height: 50px;
+  max-width: 20rem;
+  color: #444;
+}
+.home .banner .inner button {
+  vertical-align: bottom;
   height: 50px;
 }
-.banner .inner .focus {
+.home .banner .inner .focus {
   color: #fff;
 }
-.banner h1 {
+.home .banner h1 {
   margin: 0;
+}
+.home section .wrapper {
+  max-width: 100rem;
+  margin: 7rem auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 7rem;
+}
+.home section .wrapper .wrapper-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.home section .last {
+  border-bottom: none;
+}
+.home section h1 {
+  margin-bottom: 3rem;
+}
+.home .bio-wrapper {
+  text-align: center;
+}
+.home .bio-wrapper .bio {
+  margin-top: 7rem;
+  display: inline-block;
+  max-width: 238px;
+  border: 1px solid #ccc;
+}
+.home .bio-wrapper .bio img {
+  margin-top: -5rem;
+  margin-bottom: 1rem;
+  border-radius: 99px;
+  height: 15rem;
+  width: 15rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+.home .bio-wrapper .bio p {
+  color: #666666;
+}
+.home .bio-wrapper .bio .bio-name {
+  font-weight: bold;
 }

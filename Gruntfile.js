@@ -7,12 +7,12 @@ module.exports = function(grunt) {
                   yuicompress: true
               },
               files: {
-                  "./public/css/style.css": "./public/less/style.less"
+                  "./public/css/style.css": "./less/style.less"
               }
           }
       },
       watch: {
-          files: "./public/less/**/*",
+          files: "./less/**/*",
           tasks: ["less"]
       }
   });
